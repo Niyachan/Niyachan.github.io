@@ -19,7 +19,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video,
-multiline, paper, talk, poster {
+multiline {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -172,12 +172,8 @@ em, i {
 }
 
 p {
-	margin: 0 0 0 0;
+	margin: 0 0 2rem 0;
 }
-
-p + p {
-  text-indent: 1.5em;
-  margin-top: 0 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
@@ -315,27 +311,8 @@ hr {
 	text-align: right;
 }
 
-.align-justify {
-	text-align: justify;
-}
-
 .multiline {
 	white-space: pre-wrap;
-}
-
-.paper
-{
-    color: palevioletred;
-}
-
-.talk
-{
-    color: peru;
-}
-
-.poster
-{
-    color: cadetblue;
 }
 
 /* Form */
@@ -719,41 +696,6 @@ input[type="radio"] + label:before {
 		.image.main img {
 			width: 100%;
 		}
-
-	.image.resize-v {
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 30%;
-	}
-
-		.image.resize-v img {
-			width: 100%;
-		}
-
-	.image.resize-h {
-		display: inline-block;
-		margin-left: auto;
-		margin-right: auto;
-		height: 30%;
-	}
-
-		.image.resize-h img {
-			width: 100%;
-		}
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-	float: left;
-	width: 50.00%;
-	padding: 5px;
-	}
-
-/* Clear floats after image containers */
-.row::after {
-	content: "";
-	clear: both;
-	display: table;
-	}
 
 	@media screen and (max-width: 736px) {
 
